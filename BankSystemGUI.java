@@ -17,7 +17,8 @@ class BankAccount {
     }
 
     public void deposit(double amount) {
-        if (amount > 0) balance += amount;
+        if (amount > 0)
+            balance += amount;
     }
 
     public boolean withdraw(double amount) {
@@ -30,8 +31,8 @@ class BankAccount {
 
     public String getDetails() {
         return "Account Number: " + accountNumber +
-               "\nHolder: " + accountHolderName +
-               "\nBalance: $" + balance;
+                "\nHolder: " + accountHolderName +
+                "\nBalance: ₹" + balance;
     }
 
     public String getAccountNumber() {
